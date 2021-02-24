@@ -19,5 +19,6 @@ public class FactoryPatternDemo {
 
         } while (!menuString.equalsIgnoreCase("exit"));
  
+        input.close();
     }
 }
