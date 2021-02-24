@@ -1,6 +1,6 @@
-package DesignPatterns.FactoryDesignPattern;
+package DesignPatterns.FactoryDesignPattern.Shape;
 
-public class Rectangle implements Shape {
+public class Rectangle implements IShape {
 
     @Override
     public void draw() {

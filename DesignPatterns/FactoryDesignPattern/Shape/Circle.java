@@ -1,6 +1,6 @@
-package DesignPatterns.FactoryDesignPattern;
+package DesignPatterns.FactoryDesignPattern.Shape;
 
-public class Circle implements Shape {
+public class Circle implements IShape {
 
     @Override
     public void draw() {

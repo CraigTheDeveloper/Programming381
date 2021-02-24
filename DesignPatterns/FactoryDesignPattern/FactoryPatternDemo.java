@@ -1,6 +1,8 @@
 package DesignPatterns.FactoryDesignPattern;
 
 import java.util.Scanner;
+import DesignPatterns.FactoryDesignPattern.Shape.IShape;
+import DesignPatterns.FactoryDesignPattern.Shape.ShapeFactory;
 
 public class FactoryPatternDemo {
     
@@ -9,11 +11,12 @@ public class FactoryPatternDemo {
         Scanner input = new Scanner(System.in);
         String menuString = "";
         
+        // Ask what shape the user wants and use the shape factory to create the respective shape
         do {
             System.out.println("What shape do you want? Type \"Circle\", \"Square\" or \"Rectangle\". Type \"exit\" to quit.");
             menuString = input.nextLine();
 
-            Shape userShape = ShapeFactory.getShape(menuString);            
+            IShape userShape = ShapeFactory.getShape(menuString);            
             userShape.draw();
             System.out.println("Type of shape is: " + userShape.getClass());
 

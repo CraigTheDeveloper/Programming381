@@ -1,9 +1,9 @@
-package DesignPatterns.FactoryDesignPattern;
+package DesignPatterns.FactoryDesignPattern.Shape;
 
 public class ShapeFactory {
     
     // method used to instantiate an object of type shape
-    public static Shape getShape(String shapeType) {
+    public static IShape getShape(String shapeType) {
         if (shapeType == null) {
             return null;
         }
