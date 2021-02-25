@@ -13,6 +13,8 @@ public class PaypalStrategy implements IPaymentStrategy {
     @Override
     public void pay(int amount) {
         System.out.println(amount + " paid using PayPal.");
+        System.out.println("Email: " + emailId);
+        System.out.println("Password: " + password);
     }
     
 }

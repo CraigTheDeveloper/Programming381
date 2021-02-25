@@ -17,5 +17,9 @@ public class CreditCardStrategy implements IPaymentStrategy {
     @Override
     public void pay(int amount) {
        System.out.println(amount + " paid using credit card.");
+       System.out.println("Cardholder: " + name);
+       System.out.println("Card number: " + cardNumber);
+       System.out.println("Cvv: " + cvv);
+       System.out.println("Expiry date: " + expiryDate);
     }  
 }
